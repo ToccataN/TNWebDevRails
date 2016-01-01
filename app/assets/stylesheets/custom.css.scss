@@ -1,0 +1,99 @@
+@import "Bootstrap";
+
+html,body{
+    background-color: #000;
+	width:100%;
+	height:100%;
+	min-width:100%;
+}
+.header {
+    position:relative;
+	margin:0 auto ;
+	width:auto;
+	height:40%;
+} 
+.header .logo img{
+    float:left;
+	width:25%;
+	height:75%;
+	padding-top:2%;
+}
+.container {
+		float:right;
+        width:75%;
+        height:100%;
+}
+.container .background img{
+	 width :100%;
+     height:75%;
+}
+.container .navbar {
+    width:70%;
+	height:15%;
+	margin-left:2%;
+}
+
+.navbar{
+	position:absolute;
+}
+.navbar li{
+    margin-right:1%;
+	display:inline;
+}
+.navbar li a img{
+	width:16%;
+	height:30px;
+}
+.side {
+	position:relative;
+	float:left;
+	width:29%;
+	height:40%;
+}
+.side ul{
+	padding:0;
+	display:block;
+}
+.side  li{
+	width:100%;
+	min-width:10%;
+	min-height:10%;
+	margin-left:1%;
+	padding-right:1%;
+}
+	.side li a img{
+	width:85%;
+}
+.body1 {
+	position:relative;
+	float:right;
+    margin: 5% auto;
+    margin-right:5%;
+    width:65%;
+    padding-bottom:15px;
+    align-content:center;
+    }
+.body1	h1, p{
+	color:silver;
+	text-align:center;
+	font-family: egyptian-guardian, helvetica, sans-serif;
+}
+.body1 p{
+	padding-left:20%;
+	padding-right:20%;
+}
+.body1 img{
+	width:300px;
+	height:300px;
+	margin-left:30%;
+	}
+.footer{
+	position:relative;
+	clear:both;
+	right: 10%;
+}
+.footer p {
+	bottom: 5px;
+	font-size: 8;
+	text-align:right;
+}
