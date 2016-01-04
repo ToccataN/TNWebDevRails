@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('page:load', function(){
     $('li a img').hover(
     	function(){
     	   $(this).fadeTo(100,0.3,function(){
