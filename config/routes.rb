@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'about' => "pages#about"
 #User function routes  
   get 'signup' => 'users#new'
-
+  resources :users
 
  
 end
