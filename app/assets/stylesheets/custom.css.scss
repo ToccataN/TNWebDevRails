@@ -15,7 +15,7 @@ html,body{
 .header .logo img{
     float:left;
 	width:20%;
-	height:50%;
+	height:40%;
 	padding-top:2%;
 }
 li {
@@ -53,6 +53,7 @@ li {
 	float:left;
 	width:29%;
 	height:40%;
+	top: 10%;
 }
 .side ul{
 	padding:0;
@@ -62,7 +63,7 @@ li {
 	width:100%;
 	min-width:10%;
 	min-height:10%;
-	margin-left:1%;
+	margin-left:-60%;
 	padding-right:1%;
 }
 	.side li a img{
@@ -132,6 +133,13 @@ input {
     color: $state-danger-text;
   }
 }
+@media only screen and(max-width:925px){
+	
+   .side li{
+       margin-left: 1%;
+   }
+}
+
 @media only screen and(max-width:650px){
 .header{
 	position:relative;
@@ -162,14 +170,22 @@ input {
 }
 .side li{
 	min-height:5%;
+	margin-left: -60%;
 }
-
+.body1 {
+	margin-top: -5%;
+}
 .body1 img{
-
+   
 	margin-left:20%;
 	width:100px;
 	height:100px;
 }
 
 }
+@media only screen and(max-width:575px){
+	.body1 {
+      margin-top: -30%;
 
+	}
+}
