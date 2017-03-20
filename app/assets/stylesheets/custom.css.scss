@@ -82,7 +82,7 @@ li {
 .body1	h1, h3, p{
 	color:silver;
 	text-align:center;
-	font-family: egyptian-guardian, helvetica, sans-serif;
+	font-family: baskerville , helvetica, sans-serif;
 }
 .body1 p{
 	padding-left:20%;
@@ -186,8 +186,12 @@ input {
 }
 @media only screen and(max-width:575px){
 	.body1 {
-      margin-top: -15%;
+      margin-top: -5%;
 
+	}
+
+	.body1 h1{
+	   font-size: 15pt;
 	}
 	.side li{
 	   margin-left: 1%;
