@@ -1,0 +1,63 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+//mixins
+@mixin back($i){
+  background: image-url($i) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+//body/html
+
+html {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  font-family: Caslon, Baskerville, serif;
+  color: #cdcdcd;
+  @include back("BackgdAbveF1.png");
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  display: flow;
+  background-color: black;
+  border: 3px solid #b3c1b1;
+}
+
+.header img {
+  width: 75px;
+  float: left;
+}
+
+.header h1{
+  font-size: 30px
+}
+
+.landing {
+  height: 400px;
+  width: 100%;
+  background-image: image-url('BackgdAbveF1.png') no-repeat center center fixed;
+}
+
+.container-table {
+  width: 30%;
+  display: block;
+  margin-top: 20%;
+  border: 2px solid #98a976;
+  background-color: #c1c1b9;
+  border-radius: 2px;
+  color: #434343;
+}
