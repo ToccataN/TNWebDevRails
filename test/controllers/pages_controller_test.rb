@@ -1,5 +1,11 @@
 require 'test_helper'
 
+<<<<<<< HEAD
+class PagesControllerTest < ActionDispatch::IntegrationTest
+  # test "the truth" do
+  #   assert true
+  # end
+=======
 class PagesControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
@@ -26,4 +32,5 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+>>>>>>> 298a96f0d267def2f54e511cba512c9b7ece3eaa
 end

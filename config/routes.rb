@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
-  
+
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+
 #static page routes
   root "pages#index"
-  get 'links' => "pages#links"
-  get 'contact' => "pages#contact"
-  get 'media' => "pages#media"
-  get 'about' => "pages#about"
-#User function routes  
-  get 'signup' => 'users#new'
-  resources :users
 
- 
 end
