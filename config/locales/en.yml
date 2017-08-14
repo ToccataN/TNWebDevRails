@@ -16,6 +16,7 @@
 #
 # This would use the information in config/locales/es.yml.
 #
+<<<<<<< HEAD
 # The following keys must be escaped otherwise they will not be retrieved by
 # the default I18n backend:
 #
@@ -26,6 +27,8 @@
 # en:
 #   'true': 'foo'
 #
+=======
+>>>>>>> 298a96f0d267def2f54e511cba512c9b7ece3eaa
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 

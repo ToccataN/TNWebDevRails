@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
   <head>
     <title>TNWebSiteRails</title>
     <%= csrf_meta_tags %>
@@ -11,4 +12,20 @@
   <body>
     <%= yield %>
   </body>
+=======
+<head>
+  <title>TNWebSite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+   <%= render 'layouts/header'%>
+   <%= render 'layouts/sidebar'%>
+<%= yield %>
+   <%= render 'layouts/footer' %>
+</body>
+>>>>>>> 298a96f0d267def2f54e511cba512c9b7ece3eaa
 </html>

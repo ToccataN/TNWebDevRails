@@ -6,7 +6,11 @@
 #
 default: &default
   adapter: sqlite3
+<<<<<<< HEAD
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+=======
+  pool: 5
+>>>>>>> 298a96f0d267def2f54e511cba512c9b7ece3eaa
   timeout: 5000
 
 development:
