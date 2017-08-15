@@ -1,8 +1,9 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-sprockets";
+
 //mixins
 @mixin back($i){
   background: image-url($i) no-repeat center center fixed;
@@ -23,7 +24,7 @@ body {
   background-color: black;
   font-family: Caslon, Baskerville, serif;
   color: #cdcdcd;
-  @include back("BackgdAbveF1.png");
+
 }
 
 .container-fluid {
@@ -43,21 +44,110 @@ body {
 }
 
 .header h1{
-  font-size: 30px
+  font-size: 30px;
+}
+
+
+
+.dropdown {
+  right: 1%;
+  float: right;
+}
+
+.dropdown button{
+  width: 100%;
+  height: 60%;
+  font-size: 60%;
+}
+
+.navi {
+  font-size: 50%;
+  list-style-type: none;
+}
+
+.navi li {
+  display: inline;
+}
+
+.navi a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
 }
 
 .landing {
-  height: 400px;
+  min-height: 475px;
+  max-height: 475px;
   width: 100%;
-  background-image: image-url('BackgdAbveF1.png') no-repeat center center fixed;
+  @include back("BackgdAbveF1.png");
+//  background-image: image-url('BackgdAbveF1.png') no-repeat center center fixed;
 }
 
 .container-table {
-  width: 30%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 0;
+  margin-left: 20%;
+  width: 50%;
   display: block;
-  margin-top: 20%;
-  border: 2px solid #98a976;
-  background-color: #c1c1b9;
-  border-radius: 2px;
-  color: #434343;
+}
+
+.container-table img {
+  margin-top: -5%;
+  width: 500px;
+  height: auto;
+}
+
+//second about page
+
+#second {
+  min-height: 475px;
+  margin-top: 1%;
+  position: relative;
+  background-color: black;
+  color: #cccccc;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+}
+
+#second p {
+  font-size: 14pt;
+}
+
+#third {
+  width: 100%;
+  min-height: 600px;
+  background-color: #5d1915;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row ; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: row ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsbox {
+  margin-left: 1%;
+  width: 500px;
+  height: 450px;
+  min-width: 300px;
+  min-height: 450px;
+  background-color: black;
+  border: 3px solid #b3c1b1;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+.links {
+  right: 0;
+  margin-left: 2%;
+  align-self: flex-end;
+  background: image-url("GraveBox.png") no-repeat right;
+  width: 30%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 600px;
+  float: right;
 }
