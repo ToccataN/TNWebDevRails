@@ -158,6 +158,24 @@ body {
   padding-top: 5%;
   list-style-type: none;
   padding-left: 3%;
+
+}
+
+.coffins li {
+  -moz-transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+
+}
+
+.coffins li:hover {
+  opacity: .5;
+  -moz-transform: scale(1) rotate(-2deg) translate(4px);
+  -webkit-transform: scale(1) rotate(-2deg) translate(4px);
+  -o-transform: scale(1) rotate(-2deg) translate(4px);
+  transform: scale(1) rotate(-2deg) translate(4px);
+  z-index: 1000;
 }
 
 //footer section
