@@ -122,7 +122,7 @@ body {
 #third {
   width: 100%;
   min-height: 600px;
-  background-color: #5d1915;
+  @include back("Ghostpaper.png");
   display: -webkit-flex; /* Safari */
   -webkit-flex-flow: row ; /* Safari 6.1+ */
   display: flex;
@@ -131,27 +131,49 @@ body {
   justify-content: space-between;
 }
 
+#fourth {
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 60px;
+}
+.news {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+}
+#newshead {
+  margin: 0 auto;
+  align-self: center;
+}
+
+#newshead img {
+  width: 300px;
+}
+
 .newsbox {
-  margin-left: 1%;
+  margin: 0 auto;
   width: 500px;
   height: 450px;
   min-width: 300px;
   min-height: 450px;
+  padding: 1%;
   background-color: black;
   border: 3px solid #b3c1b1;
-  border-radius: 5px;
-  overflow: scroll;
+  border-radius: 3px;
+  overflow-x: auto;
+  overflow-y: scroll;
 }
 
 .links {
-  right: 0;
-  margin-left: 2%;
-  align-self: flex-end;
   background: image-url("GraveBox.png") no-repeat right;
   height: 100%;
   min-width: 300px;
   min-height: 600px;
-  float: right;
+  margin-left: -2px;
+  align-self: flex-start;
 }
 
 .coffins {
@@ -207,4 +229,36 @@ body {
   position: relative;
   font-size: 100%;
   float: left;
+}
+
+
+
+//media queries
+@media (max-width: 600px)  {
+  .landing{
+    min-width: 300px;
+    max-width: 600px;
+
+  }
+  .container-table img {
+    margin: -2% auto auto -150px;
+  }
+
+  #third {
+    flex-flow: column;
+  }
+  .links {
+    align-self: center;
+    margin-bottom: 1%;
+  }
+  .newsbox {
+    width: 320px;
+    padding: 3%;
+  }
+}
+
+@media (min-width: 800px) {
+  .links {
+    margin-left: -1%;
+  }
 }
