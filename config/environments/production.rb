@@ -62,10 +62,10 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "TNWebDevRails_#{Rails.env}"
   config.action_mailer.perform_caching = true
   config.action_mailer.default_url_options =
-     { :host => 'https://toccata-nosferatu.herokuapp.com'}
+     { :host => 'toccata-nosferatu.herokuapp.com'}
 
   Rails.application.routes.default_url_options[:host] =
-      'https://toccata-nosferatu.herokuapp.com'
+      'toccata-nosferatu.herokuapp.com'
 
   config.action_mailer.delivery_method = :smtp
    config.action_mailer.perform_deliveries = true
