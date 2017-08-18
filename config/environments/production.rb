@@ -65,7 +65,7 @@ Rails.application.configure do
      { :host => 'https://toccata-nosferatu.herokuapp.com'}
 
   Rails.application.routes.default_url_options[:host] =
-      'toccata-nosferatu.herokuapp.com'
+      'https://toccata-nosferatu.herokuapp.com'
 
   config.action_mailer.delivery_method = :smtp
    config.action_mailer.perform_deliveries = true
@@ -75,7 +75,7 @@ Rails.application.configure do
    config.action_mailer.smtp_settings = {
    address: "smtp.gmail.com",
    port: 587,
-   domain: 'toccata-nosferatu.herokuapp.com',
+   domain: ENV["GMAIL_DOMAIN"],
    authentication: :plain,
    enable_starttls_auto: true,
    user_name: ENV["GMAIL_USERNAME"],
