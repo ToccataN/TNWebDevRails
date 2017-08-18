@@ -231,7 +231,25 @@ body {
   float: left;
 }
 
+//form mailer
+.form-group {
+  width: 70%;
+  margin: 0 auto;
+}
 
+.form-group h3{
+  text-align: center;
+}
+
+//flash
+.notice {
+margin: 0 auto;
+background-color: #df0129;
+border-color: #b3c1b1;
+border-radius: 2px;
+color: #000000;
+text-align: center;
+}
 
 //media queries
 @media (max-width: 600px)  {
@@ -243,7 +261,9 @@ body {
   .container-table img {
     margin: -2% auto auto -150px;
   }
-
+  .header h1{
+    font-size: 20px;
+  }
   #third {
     flex-flow: column;
   }
@@ -254,6 +274,10 @@ body {
   .newsbox {
     width: 320px;
     padding: 3%;
+  }
+  #footer{
+    height: 10%;
+    display: block;
   }
 }
 
