@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'mail_form'
 
-
+gem 'sendgrid-ruby'
 group :production do
   gem 'pg'
 end
