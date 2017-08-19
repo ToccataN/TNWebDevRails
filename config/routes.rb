@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   match '/contact',     to: 'contacts#new',  via: 'get'
-  resources "contact", only: [:new, :create]
+  resources "contacts", only: [:new, :create]
 
 end
