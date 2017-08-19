@@ -72,15 +72,15 @@ Rails.application.configure do
    config.action_mailer.raise_delivery_errors = false
    config.action_mailer.default :charset => "utf-8"
 
-   config.action_mailer.smtp_settings = {
-    :port           => ENV['MAILGUN_SMTP_PORT'],
-    :address        => ENV['MAILGUN_SMTP_SERVER'],
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :authentication => :plain,
-    domain: 'toccata-nosferatu.herokuapp.com',
-    authentication: 'plain',
-    enable_starttls_auto: true,
+  MailForm::Base.smtp_settings = {
+   :port           => ENV['MAILGUN_SMTP_PORT'],
+   :address        => ENV['MAILGUN_SMTP_SERVER'],
+   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+   :domain         => 'toccata-nosferatu.herokuapp.com',
+   :authentication => :plain,
+ }
+ MailForm::Base.delivery_method = :smtp,
    }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
