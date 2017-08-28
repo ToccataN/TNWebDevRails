@@ -22,11 +22,12 @@ html {
 
 body {
   width: 100%;
-  min-width: 100%;
+  max-width: 100%;
   background-color: black;
   font-family: Caslon, Baskerville, serif;
   color: #cdcdcd;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container-fluid {
