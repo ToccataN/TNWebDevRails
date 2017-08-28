@@ -21,10 +21,12 @@ html {
 }
 
 body {
+  width: 100%;
+  min-width: 100%;
   background-color: black;
   font-family: Caslon, Baskerville, serif;
   color: #cdcdcd;
-
+  margin: 0 auto;
 }
 
 .container-fluid {
@@ -264,6 +266,11 @@ text-align: center;
   .header h1{
     font-size: 20px;
   }
+
+  #second p {
+    font-size: 12pt;
+  }
+
   #third {
     flex-flow: column;
   }
