@@ -1,0 +1,2 @@
+class PasswordDigest < ApplicationRecord
+end

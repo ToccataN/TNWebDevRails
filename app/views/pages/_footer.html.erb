@@ -8,11 +8,17 @@
     <li> | </li>
     <li><a href="#3">Links</a></li>
     <li> | </li>
-    <li><a href="/contact">Contact</a></li> 
+    <li><a href="/contact">Contact</a></li>
+    <li>
+    <% if logged_in? %>
+      <li> | </li>
+      <%= link_to "Logout", logout_path, method: :delete %>
+    <% end %>
+  </li>
   </ul>
 
 
 </div>
 <div class="footer-right">
-   <p> TNWebDev, rubyonrails 2017 </p>
+   <p> TNWebDev 2017 </p>
 </div>

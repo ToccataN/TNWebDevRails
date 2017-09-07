@@ -4,6 +4,9 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
+
+
+
 //mixins
 @mixin back($i){
   background: image-url($i) no-repeat center center fixed;
@@ -168,6 +171,10 @@ body {
   border-radius: 3px;
   overflow-x: auto;
   overflow-y: scroll;
+}
+
+.news-divs {
+  border-bottom: 1px solid #b3c1b1;
 }
 
 .links {
