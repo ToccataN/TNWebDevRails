@@ -17,5 +17,5 @@ Rails.application.routes.draw do
 
   match '/news', to: 'news#new', via: 'get'
   post '/news', to: 'news#create'
-  delete '/news/:id', to: 'news#destroy'
+  match '/news/:id', to: 'news#destroy', via: 'delete'
 end
