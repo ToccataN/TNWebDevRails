@@ -1,7 +1,11 @@
 <a name="news"></a>
 <div class="news">
 <div id="newshead">
-   <%= image_tag("News.png") %>
+   <% if logged_in? %>
+     <%= link_to image_tag("News.png"), "/news" , :method => :get%>
+   <% else %>
+     <%= image_tag("News.png") %>
+   <% end %>
 </div>
 
 <div class="newsbox">

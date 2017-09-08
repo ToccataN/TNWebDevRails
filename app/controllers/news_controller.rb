@@ -3,7 +3,7 @@ class NewsController < ApplicationController
     if !logged_in?
       redirect_to root_path
     end
-
+    @newsfeed = News.all
   end
 
   def create
@@ -14,6 +14,12 @@ class NewsController < ApplicationController
 
   def show
     @newsfeed = News.all
+  end
+
+  def destroy
+    @news = News.find_by(params[:id])
+    @news.destroy
+    redirect_to root_path
   end
 
   private

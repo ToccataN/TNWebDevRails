@@ -1,3 +1,5 @@
+<h1> Input News </h1>
+
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:news, url: news_path) do |f| %>
@@ -12,4 +14,18 @@
     <% end %>
 
   </div>
+
+</div>
+
+<div class="container">
+
+<% @newsfeed.reverse_each do |report| %>
+  <div class ="news-divs">
+    <h4 style="color: #912121 "><%= report.title %>: </h4>
+    <h4 style=" padding-left: 1%"><%= report.text %> </h4>
+    <h6 style="text-align: center"><%= report.created_at %></h6>
+    <%= link_to "Delete", "/news/#{report.id}" , :method => :delete%>
+  </div>
+<% end %>
+
 </div>
